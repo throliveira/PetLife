@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #263138;
+}
+
+/* Cabeçalho */
+
+header{
+    align-items: center;
+    background-color: #ff9a6c;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 80px ;
+}
+header nav a{
+    color: #ffffff;
+    font-weight: 600;
+    padding: 32px;
+    text-decoration: none;
+}
+
+/* Conteúdo principal "MAIN" */
+/* sessão 1 */
+#inicio{
+    align-items: center;
+    display: flex;
+    gap: 32px;
+    padding: 24px 80px 128px 80px;
+    position: relative;
+}
+h1, h2{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+.paragrafo{
+    line-height: 150%;
+    margin-bottom: 32px;
+}
+.botao{
+    background-color: #ff725e;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 16px 32px;
+    text-decoration: none;
+}
+.botao-transparente{
+    background-color: transparent;
+    color: #ff725e;
+    padding: 16px 32px;
+    text-underline-offset: 4px;
+}
+.absolute{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+}
+
+/* sessão 2 */
+#clinica{
+    align-items: center;
+    display: flex;
+    gap: 64px;
+    padding: 64px 80px;
+}
+#clinica li{
+    margin: 0 0 16px 32px;
+}
+
+/* sessão 3 */
+#farmacia{
+    padding: 64px 80px;
+    text-align: center;
+}
+#farmacia img{
+    margin: 64px auto;
+}
+#farmacia .paragrafo{
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+/* sessão 4 */
+#duvidas{
+    align-items: center;
+    display: flex;
+    gap: 64px;
+    padding: 64px 80px;
+}
+.duvida{
+    position: relative;
+}
+.duvida h3{
+    border-radius: 8px;
+    border: 2px solid #ff725e;
+    cursor: pointer;
+    padding: 24px;
+}
+.duvida img{
+    position: absolute;
+    right: 24px;
+    top: 32px;
+}
+.duvida .paragrafo{
+    border-bottom: 1px solid #ff725e;
+    border-left: 1px solid #ff725e;
+    border-radius: 0 0 8px 8px;
+    border-right:  1px solid #ff725e;
+    height: 0;
+    margin-top: -8px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 24px;
+    transition: .2s;
+}
+.duvida.ativa .paragrafo{
+    height: fit-content;
+    opacity: 1;
+    padding: 24px;
+}
+
+/* Rodapé */
+footer{
+    background-color: rgba(255, 152, 108, 0.25);
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+    padding: 64px 80px;
+}
+footer img, footer .titulo{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+footer nav a{
+    color: #263138;
+    display: block;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+footer p{
+    margin-bottom: 16px;
+    max-width: 350px;
+}
+footer p a{
+    color: #263138;
+    text-decoration: none;
+}
+
+#copyright{
+    background-color: #263138;
+    color: #ffffff;
+    padding: 24px;
+    text-align: center;
+}
+#copyright a{
+    color: #ff9a6c;
+}
